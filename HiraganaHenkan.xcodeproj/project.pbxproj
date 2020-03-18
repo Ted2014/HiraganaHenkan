@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360C1B7F24204CB10026F49E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360C1B7E24204CB10026F49E /* CustomNavigationController.swift */; };
+		365921CD241F43A100AF63F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365921CC241F43A100AF63F3 /* AppDelegate.swift */; };
+		365921CF241F43A100AF63F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365921CE241F43A100AF63F3 /* SceneDelegate.swift */; };
+		365921D1241F43A100AF63F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365921D0241F43A100AF63F3 /* ViewController.swift */; };
+		365921D4241F43A100AF63F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365921D2241F43A100AF63F3 /* Main.storyboard */; };
+		365921D6241F43A900AF63F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365921D5241F43A900AF63F3 /* Assets.xcassets */; };
+		365921D9241F43A900AF63F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365921D7241F43A900AF63F3 /* LaunchScreen.storyboard */; };
+		367E355C241F6E1C0033C44C /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E355B241F6E1C0033C44C /* NextViewController.swift */; };
+		367E3560241F80C50033C44C /* ApiCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E355F241F80C50033C44C /* ApiCommon.swift */; };
+		367E3562241F82E00033C44C /* ApiPostConvertToHiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E3561241F82E00033C44C /* ApiPostConvertToHiragana.swift */; };
+		367E3564241F86110033C44C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E3563241F86110033C44C /* Constant.swift */; };
+		BFA2DEA98F477F4A0A05D75C /* Pods_HiraganaHenkan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B2DA00D8A539CBEDA0ADC /* Pods_HiraganaHenkan.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33F2E7F5C0117F16F6C45F8B /* Pods-HiraganaHenkan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaHenkan.release.xcconfig"; path = "Target Support Files/Pods-HiraganaHenkan/Pods-HiraganaHenkan.release.xcconfig"; sourceTree = "<group>"; };
+		360C1B7E24204CB10026F49E /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		365921C9241F43A100AF63F3 /* ひらがな変換.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ひらがな変換.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		365921CC241F43A100AF63F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		365921CE241F43A100AF63F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		365921D0241F43A100AF63F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		365921D3241F43A100AF63F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		365921D5241F43A900AF63F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		365921D8241F43A900AF63F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		365921DA241F43A900AF63F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		367E355B241F6E1C0033C44C /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		367E355F241F80C50033C44C /* ApiCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCommon.swift; sourceTree = "<group>"; };
+		367E3561241F82E00033C44C /* ApiPostConvertToHiragana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiPostConvertToHiragana.swift; sourceTree = "<group>"; };
+		367E3563241F86110033C44C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B6E53F02FEDCD4D68DC3068D /* Pods-HiraganaHenkan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaHenkan.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaHenkan/Pods-HiraganaHenkan.debug.xcconfig"; sourceTree = "<group>"; };
+		F07B2DA00D8A539CBEDA0ADC /* Pods_HiraganaHenkan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaHenkan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		365921C6241F43A100AF63F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA2DEA98F477F4A0A05D75C /* Pods_HiraganaHenkan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B4EF78184840D5C23D50383 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6E53F02FEDCD4D68DC3068D /* Pods-HiraganaHenkan.debug.xcconfig */,
+				33F2E7F5C0117F16F6C45F8B /* Pods-HiraganaHenkan.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		360C1B80242054E30026F49E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				367E355B241F6E1C0033C44C /* NextViewController.swift */,
+				365921D0241F43A100AF63F3 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		360C1B81242055060026F49E /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				360C1B82242055100026F49E /* Apis */,
+				360C1B832420552C0026F49E /* Utilities */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		360C1B82242055100026F49E /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				367E355F241F80C50033C44C /* ApiCommon.swift */,
+				367E3561241F82E00033C44C /* ApiPostConvertToHiragana.swift */,
+			);
+			path = Apis;
+			sourceTree = "<group>";
+		};
+		360C1B832420552C0026F49E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				367E3563241F86110033C44C /* Constant.swift */,
+				360C1B7E24204CB10026F49E /* CustomNavigationController.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		365921C0241F43A100AF63F3 = {
+			isa = PBXGroup;
+			children = (
+				365921CB241F43A100AF63F3 /* HiraganaHenkan */,
+				365921CA241F43A100AF63F3 /* Products */,
+				1B4EF78184840D5C23D50383 /* Pods */,
+				5C34C4605A6169F2FF80AC3A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		365921CA241F43A100AF63F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				365921C9241F43A100AF63F3 /* ひらがな変換.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		365921CB241F43A100AF63F3 /* HiraganaHenkan */ = {
+			isa = PBXGroup;
+			children = (
+				365921CC241F43A100AF63F3 /* AppDelegate.swift */,
+				365921D5241F43A900AF63F3 /* Assets.xcassets */,
+				360C1B81242055060026F49E /* Customs */,
+				365921DA241F43A900AF63F3 /* Info.plist */,
+				365921D7241F43A900AF63F3 /* LaunchScreen.storyboard */,
+				365921D2241F43A100AF63F3 /* Main.storyboard */,
+				365921CE241F43A100AF63F3 /* SceneDelegate.swift */,
+				360C1B80242054E30026F49E /* ViewControllers */,
+			);
+			path = HiraganaHenkan;
+			sourceTree = "<group>";
+		};
+		5C34C4605A6169F2FF80AC3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F07B2DA00D8A539CBEDA0ADC /* Pods_HiraganaHenkan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		365921C8241F43A100AF63F3 /* HiraganaHenkan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365921DD241F43A900AF63F3 /* Build configuration list for PBXNativeTarget "HiraganaHenkan" */;
+			buildPhases = (
+				35E4E09BB9D1E14B8FD94443 /* [CP] Check Pods Manifest.lock */,
+				365921C5241F43A100AF63F3 /* Sources */,
+				365921C6241F43A100AF63F3 /* Frameworks */,
+				365921C7241F43A100AF63F3 /* Resources */,
+				9E4DCCA95E7DD9E9E67870E2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiraganaHenkan;
+			productName = HiraganaHenkan;
+			productReference = 365921C9241F43A100AF63F3 /* ひらがな変換.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		365921C1241F43A100AF63F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Shigetomi Tetsu";
+				TargetAttributes = {
+					365921C8241F43A100AF63F3 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 365921C4241F43A100AF63F3 /* Build configuration list for PBXProject "HiraganaHenkan" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 365921C0241F43A100AF63F3;
+			productRefGroup = 365921CA241F43A100AF63F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				365921C8241F43A100AF63F3 /* HiraganaHenkan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		365921C7241F43A100AF63F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365921D9241F43A900AF63F3 /* LaunchScreen.storyboard in Resources */,
+				365921D6241F43A900AF63F3 /* Assets.xcassets in Resources */,
+				365921D4241F43A100AF63F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35E4E09BB9D1E14B8FD94443 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiraganaHenkan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E4DCCA95E7DD9E9E67870E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiraganaHenkan/Pods-HiraganaHenkan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiraganaHenkan/Pods-HiraganaHenkan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiraganaHenkan/Pods-HiraganaHenkan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		365921C5241F43A100AF63F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365921D1241F43A100AF63F3 /* ViewController.swift in Sources */,
+				367E355C241F6E1C0033C44C /* NextViewController.swift in Sources */,
+				367E3564241F86110033C44C /* Constant.swift in Sources */,
+				365921CD241F43A100AF63F3 /* AppDelegate.swift in Sources */,
+				360C1B7F24204CB10026F49E /* CustomNavigationController.swift in Sources */,
+				367E3562241F82E00033C44C /* ApiPostConvertToHiragana.swift in Sources */,
+				365921CF241F43A100AF63F3 /* SceneDelegate.swift in Sources */,
+				367E3560241F80C50033C44C /* ApiCommon.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		365921D2241F43A100AF63F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				365921D3241F43A100AF63F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		365921D7241F43A900AF63F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				365921D8241F43A900AF63F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		365921DB241F43A900AF63F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		365921DC241F43A900AF63F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		365921DE241F43A900AF63F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6E53F02FEDCD4D68DC3068D /* Pods-HiraganaHenkan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86K2RXEV83;
+				INFOPLIST_FILE = HiraganaHenkan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.import-ev.HiraganaHenkan";
+				PRODUCT_NAME = "ひらがな変換";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		365921DF241F43A900AF63F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F2E7F5C0117F16F6C45F8B /* Pods-HiraganaHenkan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86K2RXEV83;
+				INFOPLIST_FILE = HiraganaHenkan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.import-ev.HiraganaHenkan";
+				PRODUCT_NAME = "ひらがな変換";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		365921C4241F43A100AF63F3 /* Build configuration list for PBXProject "HiraganaHenkan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365921DB241F43A900AF63F3 /* Debug */,
+				365921DC241F43A900AF63F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		365921DD241F43A900AF63F3 /* Build configuration list for PBXNativeTarget "HiraganaHenkan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365921DE241F43A900AF63F3 /* Debug */,
+				365921DF241F43A900AF63F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 365921C1241F43A100AF63F3 /* Project object */;
+}
