@@ -18,8 +18,19 @@
 		367E3560241F80C50033C44C /* ApiCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E355F241F80C50033C44C /* ApiCommon.swift */; };
 		367E3562241F82E00033C44C /* ApiPostConvertToHiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E3561241F82E00033C44C /* ApiPostConvertToHiragana.swift */; };
 		367E3564241F86110033C44C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E3563241F86110033C44C /* Constant.swift */; };
+		36D6073C2428960600EE2E5A /* HiraganaHenkanTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D6073B2428960600EE2E5A /* HiraganaHenkanTest.swift */; };
 		BFA2DEA98F477F4A0A05D75C /* Pods_HiraganaHenkan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B2DA00D8A539CBEDA0ADC /* Pods_HiraganaHenkan.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36D6073E2428960600EE2E5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 365921C1241F43A100AF63F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 365921C8241F43A100AF63F3;
+			remoteInfo = HiraganaHenkan;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		33F2E7F5C0117F16F6C45F8B /* Pods-HiraganaHenkan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaHenkan.release.xcconfig"; path = "Target Support Files/Pods-HiraganaHenkan/Pods-HiraganaHenkan.release.xcconfig"; sourceTree = "<group>"; };
@@ -36,6 +47,9 @@
 		367E355F241F80C50033C44C /* ApiCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCommon.swift; sourceTree = "<group>"; };
 		367E3561241F82E00033C44C /* ApiPostConvertToHiragana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiPostConvertToHiragana.swift; sourceTree = "<group>"; };
 		367E3563241F86110033C44C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		36D607392428960600EE2E5A /* HiraganaHenkanTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiraganaHenkanTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D6073B2428960600EE2E5A /* HiraganaHenkanTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaHenkanTest.swift; sourceTree = "<group>"; };
+		36D6073D2428960600EE2E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6E53F02FEDCD4D68DC3068D /* Pods-HiraganaHenkan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaHenkan.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaHenkan/Pods-HiraganaHenkan.debug.xcconfig"; sourceTree = "<group>"; };
 		F07B2DA00D8A539CBEDA0ADC /* Pods_HiraganaHenkan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaHenkan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -46,6 +60,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA2DEA98F477F4A0A05D75C /* Pods_HiraganaHenkan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D607362428960600EE2E5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				365921CB241F43A100AF63F3 /* HiraganaHenkan */,
+				36D6073A2428960600EE2E5A /* HiraganaHenkanTest */,
 				365921CA241F43A100AF63F3 /* Products */,
 				1B4EF78184840D5C23D50383 /* Pods */,
 				5C34C4605A6169F2FF80AC3A /* Frameworks */,
@@ -111,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				365921C9241F43A100AF63F3 /* ひらがな変換.app */,
+				36D607392428960600EE2E5A /* HiraganaHenkanTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +151,15 @@
 				360C1B80242054E30026F49E /* ViewControllers */,
 			);
 			path = HiraganaHenkan;
+			sourceTree = "<group>";
+		};
+		36D6073A2428960600EE2E5A /* HiraganaHenkanTest */ = {
+			isa = PBXGroup;
+			children = (
+				36D6073B2428960600EE2E5A /* HiraganaHenkanTest.swift */,
+				36D6073D2428960600EE2E5A /* Info.plist */,
+			);
+			path = HiraganaHenkanTest;
 			sourceTree = "<group>";
 		};
 		5C34C4605A6169F2FF80AC3A /* Frameworks */ = {
@@ -160,6 +192,24 @@
 			productReference = 365921C9241F43A100AF63F3 /* ひらがな変換.app */;
 			productType = "com.apple.product-type.application";
 		};
+		36D607382428960600EE2E5A /* HiraganaHenkanTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36D607422428960600EE2E5A /* Build configuration list for PBXNativeTarget "HiraganaHenkanTest" */;
+			buildPhases = (
+				36D607352428960600EE2E5A /* Sources */,
+				36D607362428960600EE2E5A /* Frameworks */,
+				36D607372428960600EE2E5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36D6073F2428960600EE2E5A /* PBXTargetDependency */,
+			);
+			name = HiraganaHenkanTest;
+			productName = HiraganaHenkanTest;
+			productReference = 36D607392428960600EE2E5A /* HiraganaHenkanTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +222,10 @@
 				TargetAttributes = {
 					365921C8241F43A100AF63F3 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					36D607382428960600EE2E5A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 365921C8241F43A100AF63F3;
 					};
 				};
 			};
@@ -189,6 +243,7 @@
 			projectRoot = "";
 			targets = (
 				365921C8241F43A100AF63F3 /* HiraganaHenkan */,
+				36D607382428960600EE2E5A /* HiraganaHenkanTest */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +256,13 @@
 				365921D9241F43A900AF63F3 /* LaunchScreen.storyboard in Resources */,
 				365921D6241F43A900AF63F3 /* Assets.xcassets in Resources */,
 				365921D4241F43A100AF63F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D607372428960600EE2E5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +326,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36D607352428960600EE2E5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D6073C2428960600EE2E5A /* HiraganaHenkanTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36D6073F2428960600EE2E5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 365921C8241F43A100AF63F3 /* HiraganaHenkan */;
+			targetProxy = 36D6073E2428960600EE2E5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		365921D2241F43A100AF63F3 /* Main.storyboard */ = {
@@ -438,6 +516,46 @@
 			};
 			name = Release;
 		};
+		36D607402428960600EE2E5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86K2RXEV83;
+				INFOPLIST_FILE = HiraganaHenkanTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.import-ev.HiraganaHenkanTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ひらがな変換.app/ひらがな変換";
+			};
+			name = Debug;
+		};
+		36D607412428960600EE2E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86K2RXEV83;
+				INFOPLIST_FILE = HiraganaHenkanTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.import-ev.HiraganaHenkanTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ひらがな変換.app/ひらがな変換";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -455,6 +573,15 @@
 			buildConfigurations = (
 				365921DE241F43A900AF63F3 /* Debug */,
 				365921DF241F43A900AF63F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36D607422428960600EE2E5A /* Build configuration list for PBXNativeTarget "HiraganaHenkanTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36D607402428960600EE2E5A /* Debug */,
+				36D607412428960600EE2E5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

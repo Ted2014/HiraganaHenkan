@@ -10,15 +10,15 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-protocol ApiPostConvertToHiraganaDelegate {
-    func didGetConvertedText(text: String) -> Void
-    func didFailToGetConvertedText(errorMessage: String) -> Void
+protocol ApiPostConvertToHiraganaDelegate: AnyObject { // : AnyObjectを追加
+    func didGetConvertedText(_ apiPostConvertToHiragana: ApiPostConvertToHiragana, text: String) -> Void
+    func didFailToGetConvertedText(_ apiPostConvertToHiragana: ApiPostConvertToHiragana, errorMessage: String) -> Void
 }
 
 class ApiPostConvertToHiragana: NSObject, ApiCommonDelegate {
     
-    let classname = "ApiPostConvertToHiragana"
-    var delegate: ApiPostConvertToHiraganaDelegate?
+    //let classname = "ApiPostConvertToHiragana" // String(describing: type(of: self))に置き換え
+    weak var delegate: ApiPostConvertToHiraganaDelegate? // weakを追加
     
     
     /* --- 送信 --- */
@@ -33,7 +33,7 @@ class ApiPostConvertToHiragana: NSObject, ApiCommonDelegate {
         // API送信
         let apiCommon = ApiCommon()
         apiCommon.delegate = self
-        apiCommon.accessToApi(apiName: classname,
+        apiCommon.accessToApi(apiName: String(describing: type(of: self)),
                               urlStr: REQUEST_URL_STR,
                               method: .post,
                               params: params)
@@ -42,9 +42,9 @@ class ApiPostConvertToHiragana: NSObject, ApiCommonDelegate {
     
     /* --- 受信 --- */
     
-    func didFinishJsonSuccess(apiName: String, receivedData: JSON) {
+    func didFinishJsonSuccess(_ apiCommon: ApiCommon, apiName: String, receivedData: JSON) {
         print("apiName:", apiName, receivedData)
-        if apiName != classname { return }
+        if apiName != String(describing: type(of: self)) { return }
         
         let requestId: String = receivedData["request_id"].stringValue
         let outputType: String = receivedData["output_type"].stringValue
@@ -53,12 +53,12 @@ class ApiPostConvertToHiragana: NSObject, ApiCommonDelegate {
         print(outputType)
         print(convertedText)
         
-        self.delegate?.didGetConvertedText(text: convertedText)
-        print("\(self.classname) 正常終了")
+        self.delegate?.didGetConvertedText(self, text: convertedText)
+        print("\(type(of: self)) 正常終了")
     }
     
-    func didFinishJsonWithError(apiName: String, errorMessage: String) {
+    func didFinishJsonWithError(_ apiCommon: ApiCommon, apiName: String, errorMessage: String) {
         print("apiName:", apiName, errorMessage)
-        self.delegate?.didFailToGetConvertedText(errorMessage: errorMessage)
+        self.delegate?.didFailToGetConvertedText(self, errorMessage: errorMessage)
     }
 }

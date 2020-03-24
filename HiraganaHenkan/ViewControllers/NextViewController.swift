@@ -10,14 +10,14 @@ import UIKit
 
 class NextViewController: UIViewController {
     
-    @IBOutlet weak var convertedTV: UITextView!
+    @IBOutlet weak var convertedTextView: UITextView!
     
     var sentText: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        convertedTV.text = sentText
-        convertedTV.font = FONT_SYSTEM_24
+        convertedTextView.text = sentText
+        convertedTextView.font = FONT_SYSTEM_24
     }
 
 }

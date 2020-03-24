@@ -10,35 +10,37 @@ import UIKit
 
 class ViewController: UIViewController, UITextViewDelegate, ApiPostConvertToHiraganaDelegate {
     
-    var apiPostConvertToHiragana: ApiPostConvertToHiragana = ApiPostConvertToHiragana()
+    let apiPostConvertToHiragana: ApiPostConvertToHiragana = ApiPostConvertToHiragana() // var -> let に変更
 
-    @IBOutlet weak var originalTV: UITextView!
-    @IBOutlet weak var convertBtn: UIButton!
-    @IBOutlet weak var tapHereLbl: UILabel!
+    @IBOutlet weak var originalTextView: UITextView!
+    @IBOutlet weak var convertButton: UIButton!
+    @IBOutlet weak var tapHereLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        originalTV.delegate = self
-        originalTV.font = FONT_SYSTEM_24
-        convertBtn.titleLabel?.font = FONT_SYSTEM_24
+        originalTextView.delegate = self
+        originalTextView.font = FONT_SYSTEM_24
+        convertButton.titleLabel?.font = FONT_SYSTEM_24
+        
+        convertButton.layer.borderColor = UIColor.lightGray.cgColor
+        convertButton.layer.borderWidth = 2.0
+        convertButton.layer.cornerRadius = 10.0
     }
     
     override func viewDidLayoutSubviews() {
-        convertBtn.layer.cornerRadius = 10.0
-        convertBtn.layer.borderColor = UIColor.lightGray.cgColor
-        convertBtn.layer.borderWidth = 2.0
+        
     }
     
     
     // MARK: - Button Actions
     
-    @IBAction func didTapConvertBtn(_ sender: Any) {
-        if originalTV.text.count == 0 {
+    @IBAction func didTapConvertButton(_ sender: Any) {
+        if originalTextView.text.isEmpty { // count == 0 -> isEmpty に変更
             showErrorAlert(title: "入力エラー", message: "文字入力がありません。")
             return
         }
         apiPostConvertToHiragana.delegate = self
-        apiPostConvertToHiragana.sentence = originalTV.text
+        apiPostConvertToHiragana.sentence = originalTextView.text
         apiPostConvertToHiragana.sendApi()
     }
     
@@ -46,7 +48,7 @@ class ViewController: UIViewController, UITextViewDelegate, ApiPostConvertToHira
     // MARK: - UITextViewDelegate
     
     func textViewDidBeginEditing(_ textView: UITextView) {
-        tapHereLbl.isHidden = true
+        tapHereLabel.isHidden = true
     }
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
@@ -60,11 +62,11 @@ class ViewController: UIViewController, UITextViewDelegate, ApiPostConvertToHira
     
     // MARK: - ApiPostConvertToHiraganaDelegate
     
-    func didGetConvertedText(text: String) {
+    func didGetConvertedText(_ apiPostConvertToHiragana: ApiPostConvertToHiragana, text: String) {
         performSegue(withIdentifier: "ToNextVC", sender: text)
     }
     
-    func didFailToGetConvertedText(errorMessage: String) {
+    func didFailToGetConvertedText(_ apiPostConvertToHiragana: ApiPostConvertToHiragana, errorMessage: String) {
         showErrorAlert(title: "通信エラー", message: errorMessage)
     }
     
