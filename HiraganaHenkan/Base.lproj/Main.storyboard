@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XId-QT-FjN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -9,7 +10,7 @@
         <!--Custom Navigation Controller-->
         <scene sceneID="AuZ-S2-xA1">
             <objects>
-                <navigationController id="XId-QT-FjN" customClass="CustomNavigationController" customModule="ひらがな変換" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="XId-QT-FjN" customClass="CustomNavigationController" customModule="HiraganaHenkanTest" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pwk-f4-Ybx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,19 +26,19 @@
         <!--ひらがな変換-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ひらがな変換" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="KanjiNyuryokuViewController" customModule="ひらがな変換" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_img" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MZZ-o9-LCx">
-                                <rect key="frame" x="114.5" y="44" width="371" height="556"/>
+                                <rect key="frame" x="-51" y="88" width="516" height="774"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MZZ-o9-LCx" secondAttribute="height" multiplier="477:715" id="SJP-84-BeV"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hC7-wf-zhV">
-                                <rect key="frame" x="25" y="64" width="551" height="87.5"/>
+                                <rect key="frame" x="25" y="108" width="365" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hC7-wf-zhV" secondAttribute="height" multiplier="365:58" id="Wi2-48-jNR"/>
                                 </constraints>
@@ -47,21 +48,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBC-oP-EQX">
-                                <rect key="frame" x="0.0" y="155.5" width="600" height="435"/>
+                                <rect key="frame" x="0.0" y="170" width="414" height="300"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="memo_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="SyK-KW-lhG">
-                                        <rect key="frame" x="14" y="-0.5" width="580" height="435"/>
+                                        <rect key="frame" x="10" y="0.0" width="400" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ここをタップして入力" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8l9-Gd-VZA">
-                                        <rect key="frame" x="113" y="196.5" width="353" height="42"/>
+                                        <rect key="frame" x="78" y="136" width="244" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3TQ-3j-Whu">
-                                        <rect key="frame" x="57" y="57.5" width="464" height="319"/>
+                                        <rect key="frame" x="39" y="40" width="320" height="220"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -75,7 +76,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZc-WR-Iop">
-                                <rect key="frame" x="25" y="600.5" width="551" height="90.5"/>
+                                <rect key="frame" x="25" y="480" width="365" height="60"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jZc-WR-Iop" secondAttribute="height" multiplier="73:12" id="YOs-E5-h2Y"/>
@@ -85,14 +86,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTapConvertBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VgJ-A0-Rzb"/>
+                                    <action selector="didTapConvertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fyy-Ut-LrG"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RbV-6g-no2">
-                                <rect key="frame" x="0.0" y="449.5" width="600" height="150.5"/>
+                                <rect key="frame" x="0.0" y="803" width="414" height="93"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="4p3-bH-jav">
-                                        <rect key="frame" x="120" y="0.0" width="360" height="151"/>
+                                        <rect key="frame" x="120" y="0.0" width="174" height="73"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="4p3-bH-jav" secondAttribute="height" multiplier="174:73" id="b3d-SU-04W"/>
                                         </constraints>
@@ -130,9 +131,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="ひらがな変換" id="Alt-oC-gip"/>
                     <connections>
-                        <outlet property="convertBtn" destination="jZc-WR-Iop" id="G72-2O-9IC"/>
-                        <outlet property="originalTV" destination="3TQ-3j-Whu" id="pRt-Y2-Vuj"/>
-                        <outlet property="tapHereLbl" destination="8l9-Gd-VZA" id="HfV-7f-pKg"/>
+                        <outlet property="convertButton" destination="jZc-WR-Iop" id="CGK-v5-QFC"/>
+                        <outlet property="originalTextView" destination="3TQ-3j-Whu" id="rHI-bs-jpB"/>
+                        <outlet property="tapHereLabel" destination="8l9-Gd-VZA" id="cDv-B5-Fvs"/>
                         <segue destination="lbB-7i-CJm" kind="show" identifier="ToNextVC" id="gXe-o8-YEi"/>
                     </connections>
                 </viewController>
@@ -143,26 +144,26 @@
         <!--変換結果-->
         <scene sceneID="R00-1D-uWy">
             <objects>
-                <viewController storyboardIdentifier="NextVC" id="lbB-7i-CJm" customClass="HiraganaHenkanViewController" customModule="ひらがな変換" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NextVC" id="lbB-7i-CJm" customClass="HiraganaHenkanViewController" customModule="ひらがな変換" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dl6-Y3-rhl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_img" translatesAutoresizingMaskIntoConstraints="NO" id="Mkf-0T-hBE">
-                                <rect key="frame" x="114.5" y="44" width="371" height="556"/>
+                                <rect key="frame" x="-51" y="88" width="516" height="774"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Mkf-0T-hBE" secondAttribute="height" multiplier="477:715" id="3c4-Sf-ifu"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-jI-lot">
-                                <rect key="frame" x="0.0" y="155.5" width="600" height="435"/>
+                                <rect key="frame" x="0.0" y="170" width="414" height="300"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="memo_pink" translatesAutoresizingMaskIntoConstraints="NO" id="5f0-1f-fuu">
-                                        <rect key="frame" x="14" y="-0.5" width="580" height="435"/>
+                                        <rect key="frame" x="10" y="0.0" width="400" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vQd-LO-GRp">
-                                        <rect key="frame" x="57" y="57.5" width="464" height="319"/>
+                                        <rect key="frame" x="39" y="40" width="320" height="220"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -176,10 +177,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLr-Lu-sFJ">
-                                <rect key="frame" x="0.0" y="465" width="600" height="135"/>
+                                <rect key="frame" x="0.0" y="803" width="414" height="93"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Y7w-od-mcw">
-                                        <rect key="frame" x="120" y="0.0" width="360" height="151.5"/>
+                                        <rect key="frame" x="120" y="0.0" width="174" height="73"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Y7w-od-mcw" secondAttribute="height" multiplier="174:73" id="PNZ-Cf-aai"/>
                                         </constraints>
@@ -194,7 +195,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ひらがな変換された文字列" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="erV-gX-CRl">
-                                <rect key="frame" x="60" y="67" width="478" height="80"/>
+                                <rect key="frame" x="60" y="111" width="292" height="50.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="erV-gX-CRl" secondAttribute="height" multiplier="365:58" constant="-24.752873563218373" id="bez-nA-pn4"/>
                                 </constraints>
@@ -222,7 +223,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="変換結果" id="itT-dE-32j"/>
                     <connections>
-                        <outlet property="convertedTV" destination="vQd-LO-GRp" id="l2h-6Q-hpj"/>
+                        <outlet property="convertedTextView" destination="vQd-LO-GRp" id="upW-tR-MKk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pBx-AA-Wjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
