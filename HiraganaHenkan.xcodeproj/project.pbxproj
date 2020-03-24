@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		360C1B7F24204CB10026F49E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360C1B7E24204CB10026F49E /* CustomNavigationController.swift */; };
+		36545CBC2429DE7600E59501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365921D2241F43A100AF63F3 /* Main.storyboard */; };
+		36545CC02429DF6800E59501 /* ApiPostConvertToHiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E3561241F82E00033C44C /* ApiPostConvertToHiragana.swift */; };
 		365921CD241F43A100AF63F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365921CC241F43A100AF63F3 /* AppDelegate.swift */; };
 		365921CF241F43A100AF63F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365921CE241F43A100AF63F3 /* SceneDelegate.swift */; };
-		365921D1241F43A100AF63F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365921D0241F43A100AF63F3 /* ViewController.swift */; };
+		365921D1241F43A100AF63F3 /* KanjiNyuryokuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365921D0241F43A100AF63F3 /* KanjiNyuryokuViewController.swift */; };
 		365921D4241F43A100AF63F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365921D2241F43A100AF63F3 /* Main.storyboard */; };
 		365921D6241F43A900AF63F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365921D5241F43A900AF63F3 /* Assets.xcassets */; };
 		365921D9241F43A900AF63F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365921D7241F43A900AF63F3 /* LaunchScreen.storyboard */; };
-		367E355C241F6E1C0033C44C /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E355B241F6E1C0033C44C /* NextViewController.swift */; };
+		367E355C241F6E1C0033C44C /* HiraganaHenkanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E355B241F6E1C0033C44C /* HiraganaHenkanViewController.swift */; };
 		367E3560241F80C50033C44C /* ApiCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E355F241F80C50033C44C /* ApiCommon.swift */; };
 		367E3562241F82E00033C44C /* ApiPostConvertToHiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E3561241F82E00033C44C /* ApiPostConvertToHiragana.swift */; };
 		367E3564241F86110033C44C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E3563241F86110033C44C /* Constant.swift */; };
@@ -38,12 +40,12 @@
 		365921C9241F43A100AF63F3 /* ひらがな変換.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ひらがな変換.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		365921CC241F43A100AF63F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		365921CE241F43A100AF63F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		365921D0241F43A100AF63F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		365921D0241F43A100AF63F3 /* KanjiNyuryokuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiNyuryokuViewController.swift; sourceTree = "<group>"; };
 		365921D3241F43A100AF63F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		365921D5241F43A900AF63F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		365921D8241F43A900AF63F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		365921DA241F43A900AF63F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		367E355B241F6E1C0033C44C /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		367E355B241F6E1C0033C44C /* HiraganaHenkanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaHenkanViewController.swift; sourceTree = "<group>"; };
 		367E355F241F80C50033C44C /* ApiCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCommon.swift; sourceTree = "<group>"; };
 		367E3561241F82E00033C44C /* ApiPostConvertToHiragana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiPostConvertToHiragana.swift; sourceTree = "<group>"; };
 		367E3563241F86110033C44C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -85,8 +87,8 @@
 		360C1B80242054E30026F49E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				367E355B241F6E1C0033C44C /* NextViewController.swift */,
-				365921D0241F43A100AF63F3 /* ViewController.swift */,
+				367E355B241F6E1C0033C44C /* HiraganaHenkanViewController.swift */,
+				365921D0241F43A100AF63F3 /* KanjiNyuryokuViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -263,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36545CBC2429DE7600E59501 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +318,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				365921D1241F43A100AF63F3 /* ViewController.swift in Sources */,
-				367E355C241F6E1C0033C44C /* NextViewController.swift in Sources */,
+				365921D1241F43A100AF63F3 /* KanjiNyuryokuViewController.swift in Sources */,
+				367E355C241F6E1C0033C44C /* HiraganaHenkanViewController.swift in Sources */,
 				367E3564241F86110033C44C /* Constant.swift in Sources */,
 				365921CD241F43A100AF63F3 /* AppDelegate.swift in Sources */,
 				360C1B7F24204CB10026F49E /* CustomNavigationController.swift in Sources */,
@@ -330,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36545CC02429DF6800E59501 /* ApiPostConvertToHiragana.swift in Sources */,
 				36D6073C2428960600EE2E5A /* HiraganaHenkanTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

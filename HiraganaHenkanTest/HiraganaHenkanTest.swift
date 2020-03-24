@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import HiraganaHenkan
+
 class HiraganaHenkanTest: XCTestCase {
 
     override func setUp() {

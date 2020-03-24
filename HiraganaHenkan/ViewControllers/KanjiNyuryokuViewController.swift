@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  KanjiNyuryokuViewController.swift
 //  HiraganaHenkan
 //
 //  Created by Shigetomi Tetsu on 2020/03/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextViewDelegate, ApiPostConvertToHiraganaDelegate {
+class KanjiNyuryokuViewController: UIViewController, UITextViewDelegate, ApiPostConvertToHiraganaDelegate {
     
     let apiPostConvertToHiragana: ApiPostConvertToHiragana = ApiPostConvertToHiragana() // var -> let に変更
 
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITextViewDelegate, ApiPostConvertToHira
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "ToNextVC") {
-            let vc: NextViewController = (segue.destination as? NextViewController)!
+            let vc: HiraganaHenkanViewController = (segue.destination as? HiraganaHenkanViewController)!
             let convertedText: String = sender as! String
             vc.sentText = convertedText
         }

@@ -1,5 +1,5 @@
 //
-//  NextViewController.swift
+//  HiraganaHenkanViewController.swift
 //  HiraganaHenkan
 //
 //  Created by Shigetomi Tetsu on 2020/03/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NextViewController: UIViewController {
+class HiraganaHenkanViewController: UIViewController {
     
     @IBOutlet weak var convertedTextView: UITextView!
     
