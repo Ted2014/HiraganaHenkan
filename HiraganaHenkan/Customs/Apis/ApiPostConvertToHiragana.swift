@@ -8,7 +8,7 @@
 
 import Foundation
 import Alamofire
-import SwiftyJSON
+//import SwiftyJSON
 
 protocol ApiPostConvertToHiraganaDelegate: AnyObject { // : AnyObjectを追加
     func didGetConvertedText(_ apiPostConvertToHiragana: ApiPostConvertToHiragana, text: String) -> Void
@@ -42,16 +42,40 @@ class ApiPostConvertToHiragana: NSObject, ApiCommonDelegate {
     
     /* --- 受信 --- */
     
-    func didFinishJsonSuccess(_ apiCommon: ApiCommon, apiName: String, receivedData: JSON) {
+    
+    struct Result: Codable {
+        let request_id: String
+        let output_type: String
+        let converted: String
+    }
+    
+    func didFinishJsonSuccess(_ apiCommon: ApiCommon, apiName: String, receivedData: Data) {
         print("apiName:", apiName, receivedData)
         if apiName != String(describing: type(of: self)) { return }
         
+        var requestId: String = ""
+        var outputType: String = ""
+        var convertedText: String = ""
+        
+        do {
+            let json: Result = try JSONDecoder().decode(Result.self, from: receivedData)
+            requestId = json.request_id
+            outputType = json.output_type
+            convertedText = json.converted
+            print(requestId, outputType, convertedText)
+        } catch let error as NSError {
+            // error
+            let errorMessage: String = "Error Code = \(error._code)\n\(error.localizedDescription)"
+            self.delegate?.didFailToGetConvertedText(self, errorMessage: errorMessage)
+        }
+        
+        /* SwiftyJSON使用時はこちら
         let requestId: String = receivedData["request_id"].stringValue
         let outputType: String = receivedData["output_type"].stringValue
         let convertedText: String = receivedData["converted"].stringValue
         print(requestId)
         print(outputType)
-        print(convertedText)
+        print(convertedText)*/
         
         self.delegate?.didGetConvertedText(self, text: convertedText)
         print("\(type(of: self)) 正常終了")

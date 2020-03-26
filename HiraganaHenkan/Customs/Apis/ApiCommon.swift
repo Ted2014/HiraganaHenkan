@@ -8,10 +8,10 @@
 
 import Foundation
 import Alamofire
-import SwiftyJSON
+//import SwiftyJSON
 
-protocol ApiCommonDelegate: AnyObject { // : AnyObjectを追加
-    func didFinishJsonSuccess(_ apiCommon: ApiCommon, apiName: String, receivedData: JSON) -> Void // _ apiCommon: ApiCommon,を追加
+protocol ApiCommonDelegate: AnyObject { // : weak対応のためAnyObjectを追加
+    func didFinishJsonSuccess(_ apiCommon: ApiCommon, apiName: String, receivedData: Data) -> Void // _ apiCommon: ApiCommon,を追加
     func didFinishJsonWithError(_ apiCommon: ApiCommon, apiName: String, errorMessage: String) -> Void // _ apiCommon: ApiCommon,を追加
 }
 
@@ -64,6 +64,10 @@ class ApiCommon: NSObject {
                     return
                 }
                 
+                // Codable使用時はこれ
+                self.delegate?.didFinishJsonSuccess(self, apiName: apiName, receivedData: response.data!)
+                
+                /* SwiftyJSON使用時はこちら
                 do {
                     let json = try JSON(data: response.data!)
                     //print("JSON=",json)
@@ -74,7 +78,7 @@ class ApiCommon: NSObject {
                     let message: String = "Error Code = \(error._code)\n\(error.localizedDescription)"
                     self.delegate?.didFinishJsonWithError(self, apiName: apiName, errorMessage: message)
                     print("\(self.classname) エラー終了:", error)
-                }
+                }*/
             }
         }
     }
