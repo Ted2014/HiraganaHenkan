@@ -17,7 +17,7 @@ protocol ApiCommonDelegate: AnyObject { // : weak対応のためAnyObjectを追�
 
 class ApiCommon: NSObject {
     
-    let classname = "ApiCommon"
+    //let classname = "ApiCommon" // type(of: self)に置き換え
     weak var delegate: ApiCommonDelegate? // weakを追加
     
     
@@ -25,7 +25,7 @@ class ApiCommon: NSObject {
     
     // ApiでJSON取得
     func accessToApi(apiName: String, urlStr: String, method: HTTPMethod, params: Parameters) {
-        print("\(classname) 開始", apiName)
+        print("\(type(of: self)) 開始", apiName)
         print("param:", params)
         
         // Api通信
@@ -48,7 +48,7 @@ class ApiCommon: NSObject {
             switch response.result {
             // 通信失敗時
             case .failure(let error):
-                print("\(self.classname) 通信エラー:", error)
+                print("\(type(of: self)) 通信エラー:", error)
                 
                 let message: String = "Error Code = \(error._code)\n\(error.localizedDescription)"
                 self.delegate?.didFinishJsonWithError(self, apiName: apiName, errorMessage: message)
@@ -77,7 +77,7 @@ class ApiCommon: NSObject {
                     // error
                     let message: String = "Error Code = \(error._code)\n\(error.localizedDescription)"
                     self.delegate?.didFinishJsonWithError(self, apiName: apiName, errorMessage: message)
-                    print("\(self.classname) エラー終了:", error)
+                    print("\(type(of: self)) エラー終了:", error)
                 }*/
             }
         }
