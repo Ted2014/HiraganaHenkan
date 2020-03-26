@@ -8,9 +8,10 @@
 
 import XCTest
 
-@testable import HiraganaHenkan
+@testable import ひらがな変換 //HiraganaHenkan -> アプリ名称を指定しないとエラーになる
 
-class HiraganaHenkanTest: XCTestCase {
+class HiraganaHenkanTest: XCTestCase, ApiPostConvertToHiraganaDelegate {
+    
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,6 +22,34 @@ class HiraganaHenkanTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+    
+    var callApiExpectation: XCTestExpectation? = nil
+    
+    func test正しくひらがな変換が行われているかの検証() {
+        // 非同期処理の完了を監視するオブジェクトを作成
+        // 別メソッドになるためメンバ変数を用意
+        self.callApiExpectation = self.expectation(description: "正しくひらがな変換が行われているかの検証")
+        
+        let api: ApiPostConvertToHiragana = ApiPostConvertToHiragana()
+        api.sentence = "今日は良いお天気です"
+        api.delegate = self
+        api.sendApi()
+        
+        // 指定秒数待つ
+        self.waitForExpectations(timeout: 10, handler: nil)
+    }
+    
+    func didGetConvertedText(_ apiPostConvertToHiragana: ApiPostConvertToHiragana, text: String) {
+        // 非同期処理の監視を終了
+        self.callApiExpectation?.fulfill()
+        // 結果を確認
+        XCTAssertEqual("きょうは よい おてんきです", text)
+    }
+    
+    func didFailToGetConvertedText(_ apiPostConvertToHiragana: ApiPostConvertToHiragana, errorMessage: String) {
+        
+    }
+    
 
     func testExample() {
         // This is an example of a functional test case.

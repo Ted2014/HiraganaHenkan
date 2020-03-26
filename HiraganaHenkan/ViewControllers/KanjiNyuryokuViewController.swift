@@ -34,7 +34,7 @@ class KanjiNyuryokuViewController: UIViewController, UITextViewDelegate, ApiPost
     
     // MARK: - Button Actions
     
-    @IBAction func didTapConvertButton(_ sender: Any) {
+    @IBAction func didTapConvertButton(_ sender: Any) { // 名称変更
         if originalTextView.text.isEmpty { // count == 0 -> isEmpty に変更
             showErrorAlert(title: "入力エラー", message: "文字入力がありません。")
             return

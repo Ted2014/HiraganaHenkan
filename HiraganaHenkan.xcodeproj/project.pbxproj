@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		360C1B7F24204CB10026F49E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360C1B7E24204CB10026F49E /* CustomNavigationController.swift */; };
+		36183F65242C2F4000A4E802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365921CC241F43A100AF63F3 /* AppDelegate.swift */; };
+		36183F66242C2F4700A4E802 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E3563241F86110033C44C /* Constant.swift */; };
+		36183F67242C2F4A00A4E802 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360C1B7E24204CB10026F49E /* CustomNavigationController.swift */; };
+		36183F68242C2F5F00A4E802 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365921CE241F43A100AF63F3 /* SceneDelegate.swift */; };
+		36183F69242C2F6200A4E802 /* HiraganaHenkanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E355B241F6E1C0033C44C /* HiraganaHenkanViewController.swift */; };
+		36183F6A242C2F6500A4E802 /* KanjiNyuryokuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365921D0241F43A100AF63F3 /* KanjiNyuryokuViewController.swift */; };
 		36545CBC2429DE7600E59501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365921D2241F43A100AF63F3 /* Main.storyboard */; };
 		36545CC02429DF6800E59501 /* ApiPostConvertToHiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E3561241F82E00033C44C /* ApiPostConvertToHiragana.swift */; };
 		365921CD241F43A100AF63F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365921CC241F43A100AF63F3 /* AppDelegate.swift */; };
@@ -20,7 +26,9 @@
 		367E3560241F80C50033C44C /* ApiCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E355F241F80C50033C44C /* ApiCommon.swift */; };
 		367E3562241F82E00033C44C /* ApiPostConvertToHiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E3561241F82E00033C44C /* ApiPostConvertToHiragana.swift */; };
 		367E3564241F86110033C44C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E3563241F86110033C44C /* Constant.swift */; };
+		36BABD732429FC5400361B50 /* ApiCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367E355F241F80C50033C44C /* ApiCommon.swift */; };
 		36D6073C2428960600EE2E5A /* HiraganaHenkanTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D6073B2428960600EE2E5A /* HiraganaHenkanTest.swift */; };
+		544C9DD845022C679D144F4D /* Pods_HiraganaHenkanTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C512D8ED1EBE352339CA556C /* Pods_HiraganaHenkanTest.framework */; };
 		BFA2DEA98F477F4A0A05D75C /* Pods_HiraganaHenkan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B2DA00D8A539CBEDA0ADC /* Pods_HiraganaHenkan.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +60,11 @@
 		36D607392428960600EE2E5A /* HiraganaHenkanTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiraganaHenkanTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D6073B2428960600EE2E5A /* HiraganaHenkanTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaHenkanTest.swift; sourceTree = "<group>"; };
 		36D6073D2428960600EE2E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0D163D8289D5FAC964D9D0 /* Pods-HiraganaHenkanTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaHenkanTest.release.xcconfig"; path = "Target Support Files/Pods-HiraganaHenkanTest/Pods-HiraganaHenkanTest.release.xcconfig"; sourceTree = "<group>"; };
 		B6E53F02FEDCD4D68DC3068D /* Pods-HiraganaHenkan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaHenkan.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaHenkan/Pods-HiraganaHenkan.debug.xcconfig"; sourceTree = "<group>"; };
+		C512D8ED1EBE352339CA556C /* Pods_HiraganaHenkanTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaHenkanTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F07B2DA00D8A539CBEDA0ADC /* Pods_HiraganaHenkan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaHenkan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F864A537D4B2903ECA5D2EDE /* Pods-HiraganaHenkanTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaHenkanTest.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaHenkanTest/Pods-HiraganaHenkanTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544C9DD845022C679D144F4D /* Pods_HiraganaHenkanTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +92,8 @@
 			children = (
 				B6E53F02FEDCD4D68DC3068D /* Pods-HiraganaHenkan.debug.xcconfig */,
 				33F2E7F5C0117F16F6C45F8B /* Pods-HiraganaHenkan.release.xcconfig */,
+				F864A537D4B2903ECA5D2EDE /* Pods-HiraganaHenkanTest.debug.xcconfig */,
+				3B0D163D8289D5FAC964D9D0 /* Pods-HiraganaHenkanTest.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -168,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				F07B2DA00D8A539CBEDA0ADC /* Pods_HiraganaHenkan.framework */,
+				C512D8ED1EBE352339CA556C /* Pods_HiraganaHenkanTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36D607422428960600EE2E5A /* Build configuration list for PBXNativeTarget "HiraganaHenkanTest" */;
 			buildPhases = (
+				2FC4591BAC4F458D15108FAF /* [CP] Check Pods Manifest.lock */,
 				36D607352428960600EE2E5A /* Sources */,
 				36D607362428960600EE2E5A /* Frameworks */,
 				36D607372428960600EE2E5A /* Resources */,
+				078FDA58E9D7E6F5421B3050 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,6 +289,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		078FDA58E9D7E6F5421B3050 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiraganaHenkanTest/Pods-HiraganaHenkanTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiraganaHenkanTest/Pods-HiraganaHenkanTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiraganaHenkanTest/Pods-HiraganaHenkanTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FC4591BAC4F458D15108FAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiraganaHenkanTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		35E4E09BB9D1E14B8FD94443 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,8 +389,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36183F67242C2F4A00A4E802 /* CustomNavigationController.swift in Sources */,
+				36183F68242C2F5F00A4E802 /* SceneDelegate.swift in Sources */,
+				36183F65242C2F4000A4E802 /* AppDelegate.swift in Sources */,
 				36545CC02429DF6800E59501 /* ApiPostConvertToHiragana.swift in Sources */,
+				36183F69242C2F6200A4E802 /* HiraganaHenkanViewController.swift in Sources */,
+				36183F66242C2F4700A4E802 /* Constant.swift in Sources */,
+				36183F6A242C2F6500A4E802 /* KanjiNyuryokuViewController.swift in Sources */,
 				36D6073C2428960600EE2E5A /* HiraganaHenkanTest.swift in Sources */,
+				36BABD732429FC5400361B50 /* ApiCommon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +585,7 @@
 		};
 		36D607402428960600EE2E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F864A537D4B2903ECA5D2EDE /* Pods-HiraganaHenkanTest.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +606,7 @@
 		};
 		36D607412428960600EE2E5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0D163D8289D5FAC964D9D0 /* Pods-HiraganaHenkanTest.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
