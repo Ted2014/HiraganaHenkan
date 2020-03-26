@@ -15,6 +15,8 @@ class KanjiNyuryokuViewController: UIViewController, UITextViewDelegate, ApiPost
     @IBOutlet weak var originalTextView: UITextView!
     @IBOutlet weak var convertButton: UIButton!
     @IBOutlet weak var tapHereLabel: UILabel!
+    @IBOutlet weak var bgImageView: UIImageView!
+    @IBOutlet weak var memoImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +24,24 @@ class KanjiNyuryokuViewController: UIViewController, UITextViewDelegate, ApiPost
         originalTextView.font = FONT_SYSTEM_24
         convertButton.titleLabel?.font = FONT_SYSTEM_24
         
-        convertButton.layer.borderColor = UIColor.lightGray.cgColor
+        //convertButton.layer.borderColor = UIColor.lightGray.cgColor
         convertButton.layer.borderWidth = 2.0
         convertButton.layer.cornerRadius = 10.0
     }
     
     override func viewDidLayoutSubviews() {
-        
+        // ダークモード対応（ダイナミックカラーを直接利用できないケースがあるためここで設定する）
+        if traitCollection.userInterfaceStyle == .dark {
+            convertButton.layer.borderColor = UIColor.white.cgColor
+            self.view.backgroundColor = .black
+            bgImageView.isHidden = true
+            memoImageView.alpha = 0.5
+        } else {
+            convertButton.layer.borderColor = UIColor.red.cgColor
+            self.view.backgroundColor = .white
+            bgImageView.isHidden = false
+            memoImageView.alpha = 1.0
+        }
     }
     
     

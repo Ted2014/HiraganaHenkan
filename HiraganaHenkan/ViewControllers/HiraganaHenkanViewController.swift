@@ -11,6 +11,8 @@ import UIKit
 class HiraganaHenkanViewController: UIViewController {
     
     @IBOutlet weak var convertedTextView: UITextView!
+    @IBOutlet weak var bgImageView: UIImageView!
+    @IBOutlet weak var memoImageView: UIImageView!
     
     var sentText: String = ""
 
@@ -19,5 +21,17 @@ class HiraganaHenkanViewController: UIViewController {
         convertedTextView.text = sentText
         convertedTextView.font = FONT_SYSTEM_24
     }
-
+    
+    override func viewDidLayoutSubviews() {
+        // ダークモード対応（ダイナミックカラーを直接利用できないケースがあるためここで設定する）
+        if traitCollection.userInterfaceStyle == .dark {
+            self.view.backgroundColor = .black
+            bgImageView.isHidden = true
+            memoImageView.alpha = 0.5
+        } else {
+            self.view.backgroundColor = .white
+            bgImageView.isHidden = false
+            memoImageView.alpha = 1.0
+        }
+    }
 }

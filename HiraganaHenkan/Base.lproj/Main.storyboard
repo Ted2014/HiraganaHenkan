@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XId-QT-FjN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XId-QT-FjN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -131,7 +131,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="ひらがな変換" id="Alt-oC-gip"/>
                     <connections>
+                        <outlet property="bgImageView" destination="MZZ-o9-LCx" id="Wsl-Zs-jlH"/>
                         <outlet property="convertButton" destination="jZc-WR-Iop" id="CGK-v5-QFC"/>
+                        <outlet property="memoImageView" destination="SyK-KW-lhG" id="1q4-jq-XiQ"/>
                         <outlet property="originalTextView" destination="3TQ-3j-Whu" id="rHI-bs-jpB"/>
                         <outlet property="tapHereLabel" destination="8l9-Gd-VZA" id="cDv-B5-Fvs"/>
                         <segue destination="lbB-7i-CJm" kind="show" identifier="ToNextVC" id="gXe-o8-YEi"/>
@@ -223,7 +225,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="変換結果" id="itT-dE-32j"/>
                     <connections>
+                        <outlet property="bgImageView" destination="Mkf-0T-hBE" id="6Ot-jf-DKN"/>
                         <outlet property="convertedTextView" destination="vQd-LO-GRp" id="upW-tR-MKk"/>
+                        <outlet property="memoImageView" destination="5f0-1f-fuu" id="RJx-V9-Tfk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pBx-AA-Wjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
